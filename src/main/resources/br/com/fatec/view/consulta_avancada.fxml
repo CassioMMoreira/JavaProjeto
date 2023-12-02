@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.Consulta_avancadaController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/css/consulta_avancada.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="txtNome" layoutX="75.0" layoutY="40.0" prefHeight="25.0" prefWidth="319.0" />
+      <Button fx:id="btnPesquisar" layoutX="404.0" layoutY="40.0" mnemonicParsing="false" onAction="#btnPesquisarClick" prefHeight="25.0" prefWidth="94.0" text="Pesquisar" />
+      <TableView fx:id="tableViewClientes" layoutX="28.0" layoutY="88.0" prefHeight="263.0" prefWidth="542.0">
+        <columns>
+          <TableColumn fx:id="colIdLocacao" prefWidth="77.0" text="ID da Locação" />
+            <TableColumn fx:id="colIdCliente" prefWidth="100.0" text="ID do Cliente" />
+            <TableColumn fx:id="colIdCarro" prefWidth="73.0" text="id_carro" />
+            <TableColumn fx:id="colDataLoc" prefWidth="76.0" text="Data da Locacçao" />
+            <TableColumn fx:id="colDataDev" prefWidth="135.0" text="Data da devolução" />
+            <TableColumn fx:id="colValTot" text="Valor total" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_voltar" layoutX="246.0" layoutY="361.0" mnemonicParsing="false" onAction="#btn_voltarClick" prefHeight="25.0" prefWidth="106.0" text="Voltar" />
+   </children>
+</AnchorPane>

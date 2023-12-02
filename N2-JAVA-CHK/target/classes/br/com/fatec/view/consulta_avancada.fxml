@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.Controller.Consulta_avancadaController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/css/consulta_avancada.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableViewClientes" layoutX="24.0" layoutY="40.0" prefHeight="311.0" prefWidth="546.0">
+        <columns>
+          <TableColumn fx:id="colIdCliente" prefWidth="97.0" text="ID do Cliente" />
+            <TableColumn fx:id="colINome" prefWidth="85.0" text="Nome" />
+            <TableColumn fx:id="colEmail" prefWidth="133.0" text="E-mail" />
+            <TableColumn fx:id="colCpf" prefWidth="116.0" text="Cpf" />
+            <TableColumn fx:id="colEndereco" prefWidth="110.0" text="Endereço" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_voltar" layoutX="246.0" layoutY="361.0" mnemonicParsing="false" onAction="#btn_voltarClick" prefHeight="25.0" prefWidth="106.0" text="Voltar" />
+   </children>
+</AnchorPane>
